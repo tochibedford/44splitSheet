@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    transition: all 1s;
+    z-index: 0;
+}
+
+input{
+    border-style: none;
+    border-bottom: 1px solid;
+    font-size: 15px;
+}
+input:focus{
+    border-style: none;
+    outline: none;
+    border-bottom: 1px solid;
+}
+
+button{
+    color: rgb(236, 35, 136);
+    background-color: white;
+    border: 3px black solid;
+    width: 100%;
+    height: 100%;
+}
+
+.app .navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 12vh;
+    box-shadow: 0px 0px 10px 1px rgb(97, 97, 97);
+    background-color: rgb(236, 35, 136);
+    z-index: 20;
+}
+
+.navBar .mainMenu .menuList{
+    list-style-type: none;
+}
+
+.navBar .logo{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.navBar .titleBig{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.navBar .mainMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+}
+
+.navBar .logo .logoPic{
+    object-fit: contain;
+    width: 100%;
+}
+
+.menuList .mItem{
+    display: inline;
+    margin: 0% 5% 0% 5%;
+}
+
+.menuList .mItem:hover{
+    color: white;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+
+
+.mainBody{
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2.titl{
+    font-weight: 500;
+    text-align: center;
+}
+.questions{
+    display: flex;
+    flex-direction: row;
+}
+
+.questions .left{
+    width: 15%;
+}
+.questions .center{
+    padding: 20px;
+    width: 70%;
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 0px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.questions .right{
+    width: 15%;
+}
+
+.clause{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.clause .left{
+    width: 15%;
+}
+
+.clause .center{
+    text-align: center;
+    width: 70%; 
+}
+
+.clause .right{
+    width: 15%;
+}
+
+.questions .center *{
+    margin: 3px 0px 3px 0px;
+}
+
+.clicky{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+
+.clicky .left{
+    width: 15%;
+    height: 100%;
+}
+
+.clicky .center{
+    text-align: center;
+    width: 70%; 
+    height: 100%;
+}
+
+.clicky .right{
+    width: 15%;
+    height: 100%;
+}
+
+.addSubmit{
+    display: flex;
+    flex-direction: row;
+}
+
+.clearance{
+    width: 80%;
+    height: 100%;
+}
+
+.add{
+    width: 20%;
+}
+.submit{
+    width: 20%;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .mainBody{
+    padding-top:102px;
+}
+
+.emailSend{
+    float: none;
+    position: absolute;
+    width: 200px;
+    border-radius: 5px;
+    border: 3px rgb(236, 35, 136) solid;
+    right: 14.5%;
+    top: 11%;
+    opacity: 1;
+}
+
+#em{
+    width: 100%;
+    z-index: 0;
+}
+
+.dropShow{
+    float: none;
+    position: absolute;
+    width: 200px;
+    border-radius: 5px;
+    border: 3px rgb(236, 35, 136) solid;
+    right: 14.5%;
+    top: 8%;
+    z-index: 0;
+    opacity: 0;
+}
+
+@media screen and (max-width: 1200px){
+    .emailSend{
+        right: 12%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .emailSend{
+        right: 11%;
+    }
+}
+@media screen and (max-width: 950px){
+    .emailSend{
+        right: 10%;
+    }
+}
+@media screen and (max-width: 850px){
+    .emailSend{
+        right: 8%;
+    }
+}
+
+
+@media screen and (max-width: 752px){
+    *{
+        transition: all 0.5s;
+    }
+    .menuList .mItem{
+        transition: all 2s;
+        display: inline;
+        margin: 0% 1% 0% 1%;
+
+    }
+    .navBar .titleBig{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 40%;
+        font-size: medium;
+        font-weight: 500px;
+    }
+    .emailSend{
+        right: 5%;
+        width: 175px;
+    }
+    
+}
+

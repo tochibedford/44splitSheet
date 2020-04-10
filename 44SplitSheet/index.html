@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>44db Split Sheet </title>
+</head>
+<body>
+    <div class="app">
+        <nav class="navBar">
+            <div class="logo">
+                <img src="imgs/mo.png" alt="44logo" class="logoPic">
+            </div>
+            <div class="titleBig">
+                Song Writer Split Sheet
+            </div>
+            <div class="mainMenu">
+                <li class="menuList">
+                    <ul class="mItem" id="send" onclick="dropShow()">SEND  </ul>
+                    <div class="dropShow"><input type="email" id="em" placeholder="e-mail address "></div>
+                    <ul class="mItem" id="save">SAVE</ul>
+                    <ul class="mItem" id="download">DOWNLOAD</ul>
+                </li>
+            </div>
+        </nav>
+        <div class="mainBody">
+            <form action="" method="post">
+                <div class="songInfo">
+                    <h2 class="titl" id="songInfo">Song Info</h2>
+                    <div class="questions">
+                        <div class="left">
+                        </div>
+                        <div class="center">
+                            <label for="songTitle">Song Title: </label>
+                            <input type="text" id="songTitle"><br>
+
+                            <label for="date">Date: </label><br>
+                            <input type="date" name="" id="date"><br>
+
+                            <label for="recAorB">Recording Artist or Band: </label><br>
+                            <input type="text" id="recAorB"><br>
+
+                            <label for="label">Label: </label><br>
+                            <input type="text" id="label"><br>
+
+                            <label for="stuName">Studio Name: </label><br>
+                            <input type="text" id="stuName"><br>
+
+                            <label for="stuAddress">Studio Address: </label><br>
+                            <input type="text" id="stuAddress"><br>
+
+                            <label for="stuNumber">Studio Phone Number: </label><br>
+                            <input type="text" id="stuNumber"><br>
+
+                            <label for="samples">Are any Samples used: </label><br>
+                            <div class="radio">
+                                <input type="radio" name="samples" id="samplesYes" value="yes">
+                                <label for="yes"> YES </label>
+                                <input type="radio" name="samples" id="samplesNo" value="no">
+                                <label for="no"> NO </label><br>
+                            </div>
+
+                            <label for="sampOrigin">Album and Artist where Sample originated: </label><br>
+                            <input type="text" id="sampOrigin"><br>
+                        </div>
+                        <div class="right">
+                        </div>
+                    </div>
+                </div>
+                <div class="clause">
+                    <div class="left">
+
+                    </div>
+                    <div class="center">
+                        <br>
+                        This is to confirm that we, the sole writers of the composition listed above (the
+                        "Composition"), hereby agree between ourselves to the following writers' divisions:
+                        <br>
+                        <br>
+                    </div>
+                    <div class="right">
+
+                    </div>
+                </div>
+                <div class="writers">
+                    <div class="writer1">
+                        <h2 class="titl" id="writer1"><br> Writer#1</h2>
+                        <div class="questions">
+                            <div class="left">
+                            </div>
+                            <div class="center">
+                                <label for="firstname">First Name: </label>
+                                <input type="text" id="firstname">
+                                <label for="middlename">Middle Name: </label>
+                                <input type="text" id="middlename">
+                                <label for="lastname">Last Name: </label>
+                                <input type="text" id="lastname"><br>
+                                
+                                <label for="address">Address: </label>
+                                <input type="text" id="address"><br>
+                                
+                                <label for="address">Phone: </label>
+                                <input type="text" id="address"><br>
+
+                                <label for="email">Email: </label>
+                                <input type="text" id="email"><br>
+
+                                <label for="pub">Publishing Company: </label>
+                                <input type="text" id="pub"><br>
+
+                                <label for="pubPercent">% of Song Represented by Publishing Company: </label>
+                                <input type="text" id="pubPercent"><br>
+
+                                <label for="addPub">Additional Publishing Company or Publishing Administrator: </label>
+                                <input type="text" id="addPub"><br>
+
+                                <label for="addPubPercent">% of Song Represented by Additional Publishing Company: </label>
+                                <input type="text" id="addPubPercent"><br>
+
+                                <label for="proAff">PRO Affiliation: </label>
+                                <input type="text" id="proAff"><br>
+
+                                <label for="ownPercent">Writer Ownership %: </label>
+                                <input type="text" id="ownPercent"><br>
+
+                                <label for="caeipiNum">CAE/IPI Number (if applicable): </label>
+                                <input type="text" id="caeipiNum"><br>
+
+                                <label for="sig">Writer Signature: </label>
+                                <input type="text" id="sig"><br>
+
+                                <label for="birthdate">Birthdate: </label>
+                                <input type="date" id="birthdate"><br>
+                            </div>
+                            <div class="right">
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="clicky">
+                    <div class="left">
+                    </div>
+                    <div class="center">
+                        <div class="addSubmit">
+                            <div class="clearance">
+
+                            </div>
+                            <div class="add">
+                                <button onclick="addWriter()" type="button" class="addButt">ADD WRITER</button>
+                            </div>
+                            <div class="submit">
+                                <button type="submit">SUBMIT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
